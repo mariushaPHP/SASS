@@ -1,0 +1,98 @@
+.button {
+  border-radius: 10px;
+  background: #eedd99;
+  text-align: center; }
+
+/*.container {
+    @include background-color(red);
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    nav{
+        background: aqua;
+        padding: 10px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            li{
+            display: inline-block;
+                a{
+                    color: $linkColor;
+                    text-decoration: none;
+                    text-align: center;
+                    @extend .button;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}*/
+* {
+  margin: 0; }
+
+i {
+  position: center; }
+
+body {
+  background: black;
+  /*background-image: url("https://images.unsplash.com/photo-1586078074298-05dca4848695?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80" );*/
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-repeat: no-repeat; }
+
+.container {
+  width: auto;
+  margin: 50px 0; }
+  .container .box1 {
+    background: white;
+    width: auto;
+    /*height: 200px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center; }
+    .container .box1 h1 {
+      margin: 20px; }
+  .container .box2 {
+    background: gainsboro;
+    width: auto;
+    /*height: 200px;*/
+    isplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center; }
+    .container .box2 h1 {
+      margin: 20px; }
+    .container .box2 .bele {
+      display: flex;
+      justify-content: space-around;
+      margin: 50px; }
+      .container .box2 .bele i {
+        font-size: 3rem; }
+      .container .box2 .bele p {
+        font-size: 0.7rem; }
+      .container .box2 .bele div {
+        margin: 50px; }
+  .container .box3 {
+    background: white;
+    width: auto;
+    height: 200px;
+    isplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center; }
+    .container .box3 h1 {
+      margin: 20px; }
+
+/*# sourceMappingURL=style.css.map */

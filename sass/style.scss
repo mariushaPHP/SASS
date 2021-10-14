@@ -1,0 +1,104 @@
+@import "var";
+@import "component";
+@import "mixins";
+
+/*.container {
+    @include background-color(red);
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    nav{
+        background: aqua;
+        padding: 10px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            li{
+            display: inline-block;
+                a{
+                    color: $linkColor;
+                    text-decoration: none;
+                    text-align: center;
+                    @extend .button;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}*/
+* {
+  margin: 0;
+}
+
+body {
+  background: black;
+  /*background-image: url("https://images.unsplash.com/photo-1586078074298-05dca4848695?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&ixlib=rb-1.2.1&w=1000&q=80" );*/
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-repeat: no-repeat;
+}
+
+.container{
+  width: auto;
+  margin: 50px 0;
+
+  .box1{
+    @include  background-color(white);
+    width: auto;
+    /*height: 200px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    h1{
+      margin: 20px;
+    }
+  }
+  .box2{
+    @include  background-color(gainsboro);
+    width: auto;
+    /*height: 200px;*/
+    isplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    h1{
+      margin: 20px;
+    }
+    .bele{
+      display: flex;
+      justify-content: space-around;
+      margin: 50px;
+      i{
+        font-size: 3rem;
+      }
+      p{
+        font-size: 0.7rem;
+      }
+      div{margin: 50px}
+    }
+  }
+  .box3{
+    @include  background-color(white);
+    width: auto;
+    height: 200px;
+    isplay: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    h1{
+      margin: 20px;
+    }
+  }
+}
